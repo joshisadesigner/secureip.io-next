@@ -1,0 +1,23 @@
+.aside-text {
+    margin-top: 60px;
+
+    @media ( min-width: $screen-sm-min ) {
+        margin-top: 0;
+    }
+
+    &__title {
+        margin-top: 0;
+        line-height: 1;
+        font-family: $font-titles;
+        font-size: 38px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        text-align: center;
+
+        @media ( min-width: $screen-sm-min ){
+            text-align: left;
+        }
+    }
+}

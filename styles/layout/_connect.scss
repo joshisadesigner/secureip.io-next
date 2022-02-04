@@ -1,0 +1,51 @@
+.connect {
+    background: url('../images/globalconnection.png') no-repeat center left,
+                $color-gray-light;
+}
+
+.loading {
+  background-color: #1b2855;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: auto;
+    padding-top: 10px;
+    justify-content: center;
+    min-height: 140px;
+
+    &__image {
+      align-self: center;
+    }
+  }
+
+  &__text-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+  }
+}
+
+.success {
+  color: #61CE61;
+}
+
+.fail {
+  color: #FF0000;
+}
+
+.hidden-loading {
+  display: none;
+}
+
+.pulse {
+  box-shadow: 0 0 0 rgba(255,255,255, 0.4);
+  animation: pulse 2s infinite;
+}

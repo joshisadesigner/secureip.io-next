@@ -1,0 +1,180 @@
+// Font color
+
+.color {
+
+    &-brand-1 { color: $color-brand-1; }
+    &-brand-2 { color: $color-brand-2; }
+    &-gray { color: $color-gray }
+    &-gray-light { color: $color-gray-light; }
+}
+
+// SVG fill color
+
+.fill {
+
+    &-brand-1 { fill: $color-brand-1; }
+    &-brand-2 { fill: $color-brand-2; }
+    &-gray { fill: $color-gray }
+    &-gray-light { fill: $color-gray-light; }
+}
+
+// Backgrounds
+
+.bg {
+    &-brand-1 { background: $color-brand-1 }
+    &-brand-2 { background: $color-brand-2 }
+    &-brand-1, &-brand-2 { color: #fff }
+    &-gray-light {
+        color: #000;
+        background: $color-gray-light
+    }
+}
+
+// Row Alt
+
+@media (max-width: $screen-xs-max) { 
+    .xs {
+        &-flex {
+            display: flex !important;
+            flex-flow: column;
+        }
+
+        &-order {
+            &-1 {
+                order: -1;
+            }
+        }
+    }
+}
+
+// Paddings
+
+.m {
+    &-none { margin: 0 !important; }
+
+    &-xxs { margin: 5px; }
+    &-xs { margin: 10px; }
+    &-sm { margin: 15px; }
+    &-m { margin: 20px; }
+    &-md { margin: 25px; }
+    &-lg { margin: 30px; }
+    &-xl { margin: 40px; }
+
+    &-t-none { margin-top: 0 }
+    &-t-xxs { margin-top: 5px }
+    &-t-xs { margin-top: 10px }
+    &-t-sm { margin-top: 15px }
+    &-t-m { margin-top: 20px }
+    &-t-md { margin-top: 25px }
+    &-t-lg { margin-top: 30px }
+    &-t-xl { margin-top: 40px }
+    &-t-reverse { 
+        @media ( min-width: $screen-sm-min ) {
+            margin-top: -8px !important
+        }
+     }
+
+    &-r-xxs { margin-right: 5px }
+    &-r-xs { margin-right: 10px }
+    &-r-sm { margin-right: 15px }
+    &-r-m { margin-right: 20px }
+    &-r-md { margin-right: 25px }
+    &-r-lg { margin-right: 30px }
+    &-r-xl { margin-right: 40px }
+
+    &-b-xxs { margin-bottom: 5px }
+    &-b-xs { margin-bottom: 10px }
+    &-b-sm { margin-bottom: 15px }
+    &-b-m { margin-bottom: 20px }
+    &-b-md { margin-bottom: 25px }
+    &-b-lg { margin-bottom: 30px }
+    &-b-xl { margin-bottom: 40px }
+
+    &-l-xxs { margin-left: 5px }
+    &-l-xs { margin-left: 10px }
+    &-l-sm { margin-left: 15px }
+    &-l-m { margin-left: 20px }
+    &-l-md { margin-left: 25px }
+    &-l-lg { margin-left: 30px }
+    &-l-xl { margin-left: 40px }
+    &-l-reverse { 
+        @media ( min-width: $screen-sm-min ) {
+            margin-top: -6px !important
+        }
+    }
+}
+
+// Paddings
+
+.p {
+    &-none { padding: 0 !important; }
+    &-notop { padding-top: 0 !important }
+
+    &-xxs { padding: 5px; }
+    &-t-xxs { padding-top: 5px }
+    &-r-xxs { padding-right: 5px }
+    &-b-xxs { padding-bottom: 5px }
+    &-l-xxs { padding-left: 5px }
+
+    &-xs { padding: 10px; }
+    &-t-xs { padding-top: 10px }
+    &-r-xs { padding-right: 10px }
+    &-b-xs { padding-bottom: 10px }
+    &-l-xs { padding-left: 10px }
+
+    &-sm { padding: 15px; }
+    &-t-sm { padding-top: 15px }
+    &-r-sm { padding-right: 15px }
+    &-b-sm { padding-bottom: 15px }
+    &-l-sm { padding-left: 15px }
+
+    &-m { padding: 20px; }
+    &-t-m { padding-top: 20px }
+    &-r-m { padding-right: 20px }
+    &-b-m { padding-bottom: 20px }
+    &-l-m { padding-left: 20px }
+
+    &-md { padding: 25px; }
+    &-t-md { padding-top: 25px }
+    &-r-md { padding-right: 25px }
+    &-b-md { padding-bottom: 25px }
+    &-l-md { padding-left: 25px }
+
+    &-lg { padding: 30px; }
+    &-t-lg { padding-top: 30px }
+    &-r-lg { padding-right: 30px }
+    &-b-lg { padding-bottom: 30px }
+    &-l-lg { padding-left: 30px }
+
+    &-xl { padding: 40px; }
+    &-t-xl { padding-top: 40px }
+    &-r-xl { padding-right: 40px }
+    &-b-xl { padding-bottom: 40px }
+    &-l-xl { padding-left: 40px }
+}
+
+.hidden-txt {
+    overflow: hidden;
+    text-indent: -99999px;
+    display: inline-block;
+}
+
+.txt-huge {
+        font-size: 90px;
+        letter-spacing: 10px;
+}
+
+.txt-big {
+        font-size: 60px;
+        letter-spacing: 8px;
+}
+
+.txt-mid-big {
+    font-size: 38px;
+    letter-spacing: 6px;
+}
+
+.txt-mid {
+    font-size: 22px;
+    letter-spacing: 5px;
+}

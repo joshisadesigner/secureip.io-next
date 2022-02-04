@@ -1,0 +1,46 @@
+.btn {
+
+  &-vps {
+    color: #ffffff;
+    background-color: #f37236;
+    border-color: #e66a31;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    .open .dropdown-toggle.btn-vps {
+      color: #ffffff;
+      background-color: #f77f48;
+      border-color: #e66a31;
+    }
+
+    &:active,
+    &.active,
+    .open .dropdown-toggle.btn-vps {
+      background-image: none;
+    }
+
+    &-secondary {
+      color: #ffffff;
+      background-color: #1b2a55;
+      border-color: #16254d;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      .open .dropdown-toggle.btn-vps-secondary {
+        color: #ffffff;
+        background-color: #293a69;
+        border-color: #16254d;
+      }
+
+      &:active,
+      &.active,
+      .open .dropdown-toggle.btn-vps-secondary {
+        background-image: none;
+      }
+    }
+  }
+}

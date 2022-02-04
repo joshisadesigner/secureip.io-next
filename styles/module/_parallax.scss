@@ -1,0 +1,89 @@
+.parallax {
+
+    &__container{
+        overflow: hidden;
+        position: relative;
+
+            ul {
+                padding-left: 20px;
+            }
+
+            li {
+               list-style-type: none;
+               margin-bottom: 0;
+            }
+    }
+
+    &__locations {
+        min-height: 200px;
+
+        @media ( min-width: $screen-sm-min ) {
+            min-height: 240px;
+        }
+    }
+
+    &__banners {
+        min-height: 240px;
+    }
+
+    &__team {
+        min-height: 178px;
+    }
+
+    &__elone,
+    &__eltwo,
+    &__elthr {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__elone {
+        font-size: 30px;
+
+        @media ( min-width: $screen-sm-min ) {
+            font-size: 60px;
+        }
+    }
+
+    &__eltwo {
+        opacity: 0.5;
+        font-family: $font-titles;
+
+        li {
+            font-size: 30px;
+            line-height: 1.2;
+
+            @media ( min-width: $screen-sm-min ) {
+                font-size: 80px;
+            }
+        }
+
+        span {
+            max-width: 190px;
+            display: block;
+
+            @media ( min-width: $screen-sm-min ) {
+                max-width: 380px;
+            }
+        }
+
+    &::before {
+            content: "";
+            border-top: 5px solid #fff;
+            border-left: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 5px solid #fff;
+            position: absolute;
+            transform: rotate( 45deg );
+            top: 50%;
+            left: -40px;
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    &__elthr img {
+        width: auto;
+    }
+}

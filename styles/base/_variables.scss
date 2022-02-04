@@ -1,0 +1,23 @@
+@import 'https://fonts.googleapis.com/css?family=Nobile|Raleway:300,400|Share';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,600';
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
+
+// COLORS
+
+$color-brand-1: #F37236;
+$color-brand-2: #1B2855;
+$color-gray: #404040;
+$color-gray-light: #C8C9CD;
+
+// TYPOGRAPHY
+
+$font-titles: 'Poppins', sans-serif;
+$font-body: 'Poppins', sans-serif;
+$font-nav: $font-body;
+$font-notifications: 'Open Sans', sans-serif;
+
+$text-titles-color-brand-1: $color-brand-1;
+$text-titles-color-brand-2: $color-brand-2;
+$text-subtitles-color: $color-gray-light;
+$text-body-color: $color-gray;

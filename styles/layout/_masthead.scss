@@ -1,0 +1,93 @@
+.masthead {
+    padding: 86px 15px 15px;
+    position: relative;
+    font-weight: normal;
+
+    &_prod {
+        @media ( max-width: $screen-xs-max ) {
+            padding: 86px 0 15px;
+        }
+    }
+
+    .container {
+        position: relative;
+
+        @media ( max-width: $screen-xs-max ) {
+            width: 100%;
+        }
+    }
+
+    &-home {
+        color: #fff;
+        background: linear-gradient(to bottom, rgba( 0, 20, 60, 0.8 ) 0%,rgba( 0, 20, 60, 0.8 ) 100%),
+                    url( '../images/mh-home.jpg' ) no-repeat center top;
+                    background-size: cover;
+    }
+
+    &-meet {
+        color: #fff;
+        background: linear-gradient(to bottom, rgba( 0, 20, 60, 0.8 ) 0%,rgba( 0, 20, 60, 0.8 ) 100%),
+                    url( '../images/mh-meetsecureip.jpg' ) no-repeat center top;
+                    background-size: cover;
+    }
+
+    &-whole {
+        color: #fff;
+        background: linear-gradient(to bottom, rgba( 0, 20, 60, 0.8 ) 0%,rgba( 0, 20, 60, 0.8 ) 100%),
+                    url( '../images/mh-wholesale.jpg' ) no-repeat center top;
+                    background-size: cover;
+    }
+
+    &-retail {
+        color: #fff;
+        background: linear-gradient(to bottom, rgba( 0, 20, 60, 0.8 ) 0%,rgba( 0, 20, 60, 0.8 ) 100%),
+                    url( '../images/mh-retail.jpg' ) no-repeat center top;
+                    background-size: cover;
+    }
+
+    &-connectwithus {
+        color: #fff;
+        background: linear-gradient(to bottom, rgba( 0, 20, 60, 0.8 ) 0%,rgba( 0, 20, 60, 0.8 ) 100%),
+                    url( '../images/mh-connectwithus.jpg' ) no-repeat center top;
+                    background-size: cover;
+    }
+
+    &-news {
+        color: #fff;
+        background: linear-gradient(to bottom, rgba( 0, 20, 60, 0.8 ) 0%,rgba( 0, 20, 60, 0.8 ) 100%),
+                    url( '../images/mh-news.jpg' ) no-repeat center top;
+                    background-size: cover;
+    }
+
+    // .container {
+    //     display: flex;
+    //     min-height: 100%;
+    //     align-items: center;
+    // }
+
+    &-opaque {
+        opacity: .3;
+        position: absolute;
+        top: -25px;
+        right: 10%;
+        width: 50%;
+    }
+}
+
+.brand {
+    display: block;
+
+    @media ( min-width: $screen-sm-min ) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    img {
+        width: 80px;
+        transition: all .8s ease-in-out;
+
+        @media ( min-width: $screen-sm-min ) {
+            width: 150px;
+        }
+    }
+}

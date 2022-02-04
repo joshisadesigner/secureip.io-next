@@ -1,0 +1,71 @@
+.retail {
+
+    @media ( min-width: $screen-sm-min ) {
+        &-brand {
+            padding: 0 10px;
+        }
+
+        &-prod {
+            &_l {
+                padding-right: 15px;
+            }
+    
+            &_r {
+                padding-left: 15px;
+            }
+        }
+    }
+    
+    &__logo {
+        display: block;
+        margin: 0 auto 20px;
+        color: transparent;
+        height: 70px;
+        text-indent: -99999px;
+        filter: grayscale(100%);
+        -webkit-transition: ease-in 0.3s;
+        -moz-transition: ease-in 0.3s;
+        -ms-transition: ease-in 0.3s;
+        -o-transition: ease-in 0.3s;
+        transition: ease-in 0.3s;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: transparent;
+            filter: grayscale(0%);
+        }
+
+        &_americavoice {
+            width: 168px;
+            background: url(../images/logo-av.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &_mercury{
+            width: 211px;
+            background: url(../images/logo-mercury.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &_atel {
+            width: 143px;
+            background: url(../images/logo-atel.svg);
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &_homycard {
+            width: 211px;
+            background: url(../images/logo-omc.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+html {
+    background: $color-brand-2;
+}
+body {
+    background: #fff;
+    color: $text-body-color;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    overflow-x: hidden;
+}
+
+nav li {
+    margin-bottom: 0;
+}
+
+section,
+footer {
+    padding: 40px 0 0;
+}
+
+a {
+    color: $color-brand-1;
+
+    &:hover,
+    &:focus {
+        color: darken( $color-brand-1, 5% );
+        text-decoration: underline;
+    }
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+svg {
+    font-family: $font-titles;
+
+    text {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+}

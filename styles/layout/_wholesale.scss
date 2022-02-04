@@ -1,0 +1,45 @@
+.platform {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    @media ( min-width: $screen-sm-min ) {
+        flex-flow: row nowrap;
+    }
+
+    &__sideone {
+        text-align: center;
+        padding-right: 20px;
+
+        @media ( min-width: $screen-sm-min ) {
+            text-align: left;
+        }
+    }
+}
+
+.staticimage {
+    min-height: 250px;
+    background: url( ../images/bg-wholesale.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wholesale-list {
+    margin-bottom: 60px;
+
+    @media ( min-width: $screen-sm-min ) {
+        margin-bottom: 0;
+        margin-top: 75px;
+    }
+}
+
+.wholesale-anniversaryseal {
+    width: 180px;
+    margin: 0 auto;
+
+    @media ( max-width: $screen-xs-max ) {
+        max-height: 150px;
+        width: auto;
+        margin: 0 auto 30px;
+    }
+}

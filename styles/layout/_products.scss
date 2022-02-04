@@ -1,0 +1,132 @@
+.prod {
+  padding-top: 102px;
+    
+  @media (max-width: $screen-xs-max) {
+    padding-top: 82px;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+  &-img {
+    margin-bottom: 30px;
+    max-width: 220px;
+    border: 10px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px rgba(#000, 0.1);
+
+    &-l {
+      float: left;
+      margin-right: 30px;
+    }
+
+    &-r {
+      float: right;
+      margin-left: 30px;
+    }
+    
+    @media (max-width: $screen-xs-max) {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      max-width: 350px;
+    }
+  }
+
+  &-btn {
+    display: block;
+    width: 320px;
+    max-width: 148px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+    
+    @media (max-width: $screen-xs-max) {
+      justify-content: center;
+    }
+
+    a {
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    
+      @media (max-width: $screen-xs-max) {
+        margin-right: 5px;
+        margin-left: 5px;
+
+        &:last-child {
+          margin-right: 5px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+.price-table-container {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  ul li {
+    padding: 30px 4px 6px 4px;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .price-table {
+    padding: 0;
+    margin: 0;
+    width: 215px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+
+    .active .top-head {
+      background: #1b2955;
+    }
+
+    .top-head {
+      background: #f37236;
+      border-radius: 5px 5px 0 0;
+
+      .top-area {
+        padding: 15px;
+        margin: 0 0 0 0;
+        border-bottom: 1px solid #f1f1b6;
+        h4 {
+          padding: 0;
+          margin: 0;
+          color: #fff;
+          line-height: 29px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .order-button,
+    .order-button:hover {
+      padding: 8px 0;
+      margin: 10px 20px 0;
+      font-size: 18px;
+      color: #ffffff;
+      display: block;
+      font-weight: bold;
+      background: #1b2a55;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+
+    .price-area {
+      padding: 10px;
+    }
+  }
+}

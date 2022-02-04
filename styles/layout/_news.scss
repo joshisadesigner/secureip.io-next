@@ -1,0 +1,41 @@
+.new {
+    &__head {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+
+        a {
+            text-decoration: none;
+        }
+
+        @media ( min-width: $screen-sm-min ) {
+            flex-flow: row nowrap;
+            align-items: flex-end;
+        }
+    }
+
+    &__img {
+        max-height: 100px;
+        width: auto;
+        margin-right: 30px;
+    }
+
+    &__cont {
+        padding: 40px 0 0;
+    }
+
+    &__footer {
+        padding: 0;
+
+        a {
+            color: $color-brand-1;
+            font-weight: 500;
+        
+            &:hover,
+            &:focus {
+                color: darken( $color-brand-1, 5% );
+                text-decoration: underline;
+            }
+        }
+    }
+}
