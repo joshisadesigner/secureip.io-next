@@ -8,7 +8,7 @@
         justify-content: center;
         text-align: center;
 
-        @media ( min-width: $screen-sm-min ) {
+        @include media-breakpoint-up(sm) {
             flex-flow: row nowrap;
         }
     }
@@ -18,7 +18,7 @@
         margin: 0 0 30px;
         line-height: 1;
 
-        @media ( min-width: $screen-sm-min ) {
+        @include media-breakpoint-up(sm) {
             max-width: 200px;
             margin-right: 30px;
         }

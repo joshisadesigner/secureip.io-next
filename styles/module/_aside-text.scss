@@ -1,7 +1,7 @@
 .aside-text {
     margin-top: 60px;
 
-    @media ( min-width: $screen-sm-min ) {
+    @include media-breakpoint-up(sm) {
         margin-top: 0;
     }
 
@@ -16,7 +16,7 @@
     p {
         text-align: center;
 
-        @media ( min-width: $screen-sm-min ){
+        @include media-breakpoint-up(sm){
             text-align: left;
         }
     }

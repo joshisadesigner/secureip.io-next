@@ -32,7 +32,7 @@
 
 // Row Alt
 
-@media (max-width: $screen-xs-max) { 
+@include media-breakpoint-down(xs){
     .xs {
         &-flex {
             display: flex !important;
@@ -69,7 +69,7 @@
     &-t-lg { margin-top: 30px }
     &-t-xl { margin-top: 40px }
     &-t-reverse { 
-        @media ( min-width: $screen-sm-min ) {
+        @include media-breakpoint-up(sm) {
             margin-top: -8px !important
         }
      }
@@ -98,7 +98,7 @@
     &-l-lg { margin-left: 30px }
     &-l-xl { margin-left: 40px }
     &-l-reverse { 
-        @media ( min-width: $screen-sm-min ) {
+        @include media-breakpoint-up(sm) {
             margin-top: -6px !important
         }
     }

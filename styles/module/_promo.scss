@@ -9,7 +9,7 @@
         display: flex;
         justify-content: center;
 
-        @media ( max-width: $screen-xs-max ) {
+        @include media-breakpoint-down(xs) {
             display: block;
         }
     }
@@ -22,7 +22,7 @@
         background: $color-brand-1;
         // display: none;
 
-        @media ( max-width: $screen-xs-max ) {
+        @include media-breakpoint-down(xs) {
             width: 100%;
             text-align: center;
         }

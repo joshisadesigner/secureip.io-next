@@ -1,6 +1,6 @@
 .retail {
 
-    @media ( min-width: $screen-sm-min ) {
+    @include media-breakpoint-up(sm) {
         &-brand {
             padding: 0 10px;
         }

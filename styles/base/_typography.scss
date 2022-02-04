@@ -43,11 +43,11 @@ li {
         font-size: 45px;
         line-height: 1;
 
-        @media ( min-width: $screen-sm-min ) {
+        @include media-breakpoint-up(sm) {
             font-size: 60px;
         }
 
-        @media ( min-width: $screen-md-min ) {
+        @include media-breakpoint-up(md) {
             font-size: 80px;
         }
     }
