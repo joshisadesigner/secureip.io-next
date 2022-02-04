@@ -1,9 +1,10 @@
 export enum SiteRoutes {
+  Article = "/news/article",
   CloudServices="/cloud-services",
+  ConnectWithUs = "/connect-with-us",
+  LockStorage = "/products/lock-storage",
+  News = "/news",
+  PushNotificationConsole = "/products/push-notification-console",
   Retail = "/retail",
   Wholesale = "/wholesale",
-  LockStorage = "/products/lock-storage",
-  PushNotificationConsole = "/products/push-notification-console",
-  news = "/news",
-  article = "/news/article"
 }
