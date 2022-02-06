@@ -1,12 +1,22 @@
 import Image from "next/image";
+import GoogleMap from "../components/google-map";
 
 export default function ConnectWithUs(): JSX.Element {
   return (
     <>
       <div className="masthead">
         <div className="container m-t-m">
-          <div className="row xs-flex">
+          <div className="row">
             <div className="col-md-6 animated slideInLeft">
+              <div className="d-md-none">
+                <h2 className="animated slideInRight m-t-none">
+                  <span className="text-brand-1 text-size-huge m-l-reverse">QUALITY</span>
+                </h2>
+                <p className="m-b-lg">
+                  The reliability and competitive prices of our services are the keys to our customers satisfaction across
+                  the globe.
+                </p>
+              </div>
               <form id="contactform" method="post" action="scripts/connectWithUs.php">
                 <div className="row g-3">
                   <div className="col-md-6">
@@ -66,7 +76,6 @@ export default function ConnectWithUs(): JSX.Element {
                         <input type="checkbox" name="ismobile"/>
                       </div>
                     </div>
-
                     {/*<div className="input-group">*/}
                     {/*  <input data-localize="phonefieldinput" type="text" className="form-control" id="phone" name="phone" placeholder="Enter your phone number" />*/}
                     {/*  <span className="input-group-addon">*/}
@@ -139,17 +148,17 @@ export default function ConnectWithUs(): JSX.Element {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 xs-order-1">
-              <h2 className="animated slideInRight m-t-none">
-                <span className="text-brand-1 text-size-huge m-l-reverse">QUALITY</span>
-              </h2>
-              <p className="m-b-lg">
-                The reliability and competitive prices of our services are the keys to our customers satisfaction across
-                the globe.
-              </p>
-            </div>
             <div className="col-md-6">
-              <div id="map-Sip" className="map__location map__location_us animated slideInUp"/>
+              <div className="d-none d-md-block">
+                <h2 className="animated slideInRight m-t-none">
+                  <span className="text-brand-1 text-size-huge m-l-reverse">QUALITY</span>
+                </h2>
+                <p className="m-b-lg">
+                  The reliability and competitive prices of our services are the keys to our customers satisfaction across
+                  the globe.
+                </p>
+              </div>
+              <GoogleMap />
             </div>
           </div>
         </div>
