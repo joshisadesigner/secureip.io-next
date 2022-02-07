@@ -1,4 +1,4 @@
-export enum SiteRoutes {
+export enum Routes {
   Article = "/news/article",
   CloudServices="/cloud-services",
   ConnectWithUs = "/connect-with-us",

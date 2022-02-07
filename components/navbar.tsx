@@ -1,4 +1,4 @@
-import { SiteRoutes } from "../shared"
+import { Routes } from "../shared"
 import Link from "next/link";
 
 export default function Navbar():JSX.Element {
@@ -20,17 +20,17 @@ export default function Navbar():JSX.Element {
 
             <ul className="nav navbar-nav">
               <li className="nav-item active">
-                <Link href={SiteRoutes.CloudServices}>
+                <Link href={Routes.CloudServices}>
                   <a className="nav-link">Cloud Services</a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href={SiteRoutes.Retail}>
+                <Link href={Routes.Retail}>
                   <a className="nav-link">Retail</a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href={SiteRoutes.Wholesale}>
+                <Link href={Routes.Wholesale}>
                   <a className="nav-link">Wholesale</a>
                 </Link>
               </li>
@@ -41,19 +41,19 @@ export default function Navbar():JSX.Element {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link href={SiteRoutes.LockStorage}>
+                    <Link href={Routes.LockStorage}>
                       <a className="dropdown-item">Lock Storage</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={SiteRoutes.PushNotificationConsole}>
+                    <Link href={Routes.PushNotificationConsole}>
                       <a className="dropdown-item">Push Notification Console</a>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link href={SiteRoutes.News}>
+                <Link href={Routes.News}>
                   <a className="nav-link">News</a>
                 </Link>
               </li>
