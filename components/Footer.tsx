@@ -55,7 +55,7 @@ export default function Footer():JSX.Element {
               <div className="m-b-xl">
                 <h3>GET CONNECTED</h3>
                 <p>We provide innovative solutions to our customers through multiple products and services.</p>
-                <Link href={Routes.ConnectWithUs}><a className="btn btn-link">CONNECT WITH US</a></Link>
+                <Link href={Routes.ConnectWithUs}><a className="btn btn-primary">CONNECT WITH US</a></Link>
               </div>
             </div>
           </div>
