@@ -1,8 +1,9 @@
 export default function CloudServices():JSX.Element {
+
   return (
     <>
       <div className="masthead"/>
-      <section className="p-notop">
+      <section>
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -24,15 +25,24 @@ export default function CloudServices():JSX.Element {
               <div className="mb-4">
                 <img
                   src="https://secureip.io/app/uploads/2019/10/Placeholder_Cloud_Services_Oct_2019.png"
-                  width="1284"
-                  height="673"
                   sizes="(max-width: 1284px) 100vw, 1284px"
                   alt=""
                   className="so-widget-image"
                 />
               </div>
-              <div>
+              <div style={{
+                position: "relative",
+                paddingBottom: "56.25%", /* 16:9 */
+                height: 0,
+              }}>
                 <iframe
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
                   width="465"
                   height="280"
                   src="https://www.youtube.com/embed/8uUlHSUK4xU"
