@@ -1,7 +1,7 @@
 import {useEffect} from "react";
 import "../styles/main.scss";
 import "../shared/font-awesome";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }) {
 
