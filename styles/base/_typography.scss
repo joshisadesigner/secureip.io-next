@@ -39,16 +39,30 @@ li {
         color: $color-brand-2;
     }
 
-    &-size-huge {
-        font-size: 45px;
-        line-height: 1;
+    &-size {
+        &-huge {
+            font-size: 45px;
+            line-height: 1;
 
-        @include media-breakpoint-up(sm) {
-            font-size: 60px;
+            @include media-breakpoint-up(sm) {
+                font-size: 60px;
+            }
+
+            @include media-breakpoint-up(md) {
+                font-size: 80px;
+            }
         }
+        &-big {
+            font-size: 30px;
+            line-height: 1;
 
-        @include media-breakpoint-up(md) {
-            font-size: 80px;
+            @include media-breakpoint-up(sm) {
+                font-size: 40px;
+            }
+
+            @include media-breakpoint-up(md) {
+                font-size: 60px;
+            }
         }
     }
 }
