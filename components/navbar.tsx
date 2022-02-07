@@ -1,3 +1,4 @@
+import { SiteRoutes } from "../shared"
 import Link from "next/link";
 
 export default function Navbar():JSX.Element {
@@ -19,23 +20,18 @@ export default function Navbar():JSX.Element {
 
             <ul className="nav navbar-nav">
               <li className="nav-item active">
-                <Link href="/coud-services">
+                <Link href={SiteRoutes.CloudServices}>
                   <a className="nav-link">Cloud Services</a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/ratail">
+                <Link href={SiteRoutes.Retail}>
                   <a className="nav-link">Retail</a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="wholesale">
+                <Link href={SiteRoutes.Wholesale}>
                   <a className="nav-link">Wholesale</a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/our-products">
-                  <a className="nav-link">Our Products</a>
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -45,19 +41,19 @@ export default function Navbar():JSX.Element {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link href="/products/lock-storage">
+                    <Link href={SiteRoutes.LockStorage}>
                       <a className="dropdown-item">Lock Storage</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/products/push-notification-console">
+                    <Link href={SiteRoutes.PushNotificationConsole}>
                       <a className="dropdown-item">Push Notification Console</a>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link href="/news">
+                <Link href={SiteRoutes.News}>
                   <a className="nav-link">News</a>
                 </Link>
               </li>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiteRoutes } from "../shared"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Footer():JSX.Element {
@@ -54,7 +55,7 @@ export default function Footer():JSX.Element {
               <div className="m-b-xl">
                 <h3>GET CONNECTED</h3>
                 <p>We provide innovative solutions to our customers through multiple products and services.</p>
-                <Link href="/connect-with-us"><a className="btn btn-link">CONNECT WITH US</a></Link>
+                <Link href={SiteRoutes.ConnectWithUs}><a className="btn btn-link">CONNECT WITH US</a></Link>
               </div>
             </div>
           </div>
