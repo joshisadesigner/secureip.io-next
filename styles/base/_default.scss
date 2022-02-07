@@ -20,12 +20,17 @@ footer {
 
 a {
     color: $color-brand-1;
+    text-decoration: none;
 
     &:hover,
     &:focus {
         color: darken( $color-brand-1, 5% );
         text-decoration: underline;
     }
+}
+
+b, strong {
+    font-weight: 700;
 }
 
 img {

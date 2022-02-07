@@ -1,12 +1,12 @@
-import { library, config} from "@fortawesome/fontawesome-svg-core";
-
+import { library, config } from "@fortawesome/fontawesome-svg-core";
 import {
-  faFacebook,
+  faFacebookF,
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
 config.autoAddCss = false;
+
 library.add(
-  faFacebook,
+  faFacebookF,
   faTwitter
 );

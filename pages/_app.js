@@ -1,5 +1,6 @@
-import "../styles/main.scss";
 import {useEffect} from "react";
+import "../styles/main.scss";
+import "../shared/font-awesome";
 
 export default function App({ Component, pageProps }) {
 
