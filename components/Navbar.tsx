@@ -1,16 +1,16 @@
 import { Routes } from "../shared"
-import Link from "next/link";
+import ActiveLink from "./ActiveLink";
 
 export default function Navbar():JSX.Element {
   return (
     <header>
       <nav className="navbar navbar-default navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <Link href="/">
+          <ActiveLink activeClassName="active" href="/">
             <a className="navbar-brand">
               <img className="team__ceo" src="./assets/images/logo-sip-h.svg" alt="Secure IP Logo" />
             </a>
-          </Link>
+          </ActiveLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                   aria-label="Toggle navigation">
@@ -20,19 +20,19 @@ export default function Navbar():JSX.Element {
 
             <ul className="nav navbar-nav">
               <li className="nav-item active">
-                <Link href={Routes.CloudServices}>
+                <ActiveLink activeClassName="active" href={Routes.CloudServices}>
                   <a className="nav-link">Cloud Services</a>
-                </Link>
+                </ActiveLink>
               </li>
               <li className="nav-item">
-                <Link href={Routes.Retail}>
+                <ActiveLink activeClassName="active" href={Routes.Retail}>
                   <a className="nav-link">Retail</a>
-                </Link>
+                </ActiveLink>
               </li>
               <li className="nav-item">
-                <Link href={Routes.Wholesale}>
+                <ActiveLink activeClassName="active" href={Routes.Wholesale}>
                   <a className="nav-link">Wholesale</a>
-                </Link>
+                </ActiveLink>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -41,21 +41,21 @@ export default function Navbar():JSX.Element {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link href={Routes.LockStorage}>
+                    <ActiveLink activeClassName="active" href={Routes.LockStorage}>
                       <a className="dropdown-item">Lock Storage</a>
-                    </Link>
+                    </ActiveLink>
                   </li>
                   <li>
-                    <Link href={Routes.PushNotificationConsole}>
+                    <ActiveLink activeClassName="active" href={Routes.PushNotificationConsole}>
                       <a className="dropdown-item">Push Notification Console</a>
-                    </Link>
+                    </ActiveLink>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link href={Routes.News}>
+                <ActiveLink activeClassName="active" href={Routes.News}>
                   <a className="nav-link">News</a>
-                </Link>
+                </ActiveLink>
               </li>
             </ul>
           </div>
