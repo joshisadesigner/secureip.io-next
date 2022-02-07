@@ -19,7 +19,7 @@ export default function Navbar():JSX.Element {
           <div className="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
 
             <ul className="nav navbar-nav">
-              <li className="nav-item active">
+              <li className="nav-item">
                 <ActiveLink activeClassName="active" href={Routes.CloudServices}>
                   <a className="nav-link">Cloud Services</a>
                 </ActiveLink>
