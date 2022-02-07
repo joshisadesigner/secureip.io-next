@@ -5,7 +5,7 @@ export default function Home() {
         <section className="container-fluid">
           <div className="row justify-content-center">
             <div className="col-xs-12">
-              <h1 className="text-center">
+              <h1 className="text-center mt-4 mb-3">
                 <span className="text-size-huge">Telecom</span>
                 <span className="text-size-huge text-brand-1">Technology</span>
                 <span className="text-size-huge ">Services</span>
@@ -14,7 +14,7 @@ export default function Home() {
           </div>
           <div className="row justify-content-center">
             <div className="col-xs-12 col-sm-8 col-md-6 col-md-push-3 col-sm-push-2">
-              <p>
+              <p className="my-3">
                 Secure IP is a leading <strong>telecom technology services</strong> including prepaid pin less,
                 wholesale international long distance, mobile top-ups, and international e-gift cards. The company’s
                 commitment to offer the highest quality services with advanced engineering techniques, high-grade
