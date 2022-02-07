@@ -1,5 +1,8 @@
 /* navbar */
 .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+
   &-default {
     // background-color: $color-brand-2;
     min-height: 5px;
@@ -9,6 +12,7 @@
 
   &-brand {
     height: 70px;
+    padding: 14px 15px;
 
     @include media-breakpoint-up(sm) {
         height: 86px;
@@ -72,10 +76,13 @@
 
 .navbar-default .navbar-nav > li > a {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
     border-top: 2px solid transparent;
     font-weight: 600;
+    padding: 10px 15px !important;
+    text-decoration: none;
 
     @include media-breakpoint-up(sm) {
         height: 86px;
@@ -100,7 +107,7 @@
     background-color: lighten( $color-brand-2, 3% );
 
     @include media-breakpoint-up(sm) {
-        color: $color-brand-1;
+        color: $color-brand-1 !important;
         background-color: transparent;
         border-top: 2px solid $color-gray-light;
     }
