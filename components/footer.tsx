@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Footer():JSX.Element {
@@ -53,7 +54,7 @@ export default function Footer():JSX.Element {
               <div className="m-b-xl">
                 <h3>GET CONNECTED</h3>
                 <p>We provide innovative solutions to our customers through multiple products and services.</p>
-                <a href="https://secureip.io/quality/" className="btn btn-link">CONNECT WITH US</a>
+                <Link href="/connect-with-us"><a className="btn btn-link">CONNECT WITH US</a></Link>
               </div>
             </div>
           </div>
