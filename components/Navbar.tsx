@@ -4,7 +4,7 @@ import ActiveLink from "./ActiveLink";
 export default function Navbar():JSX.Element {
   return (
     <header>
-      <nav className="navbar navbar-default navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-default navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container-fluid">
           <ActiveLink activeClassName="active" href="/">
             <a className="navbar-brand">
