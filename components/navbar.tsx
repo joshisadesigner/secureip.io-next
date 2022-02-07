@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home():JSX.Element {
+export default function Navbar():JSX.Element {
   return (
     <header>
       <nav className="navbar navbar-default navbar-fixed-top">
