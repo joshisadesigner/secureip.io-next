@@ -12,9 +12,11 @@ const ActiveLink = ({ href, children, activeClassName, ...props }) => {
   // pages/news.js will be matched via props.href
   // pages/new/[slug].js will be matched via props.as
   const className =
-    asPath === props.href || asPath === props.as
+    asPath === href || asPath === props.as
       ? `${childClassName} ${activeClassName}`.trim()
       : childClassName
+
+  console.log(asPath, href); /* /cloud-services */
 
   return (
     <Link href={href} {...props}>
