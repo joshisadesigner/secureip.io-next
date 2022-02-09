@@ -1,16 +1,17 @@
-import { Routes } from "../shared"
+import Link from 'next/link';
 import ActiveLink from "./ActiveLink";
+import { Routes } from "../shared"
 
 export default function Navbar():JSX.Element {
   return (
     <header>
       <nav className="navbar navbar-default navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container-fluid">
-          <ActiveLink activeClassName="active" href="/">
+          <Link href="/">
             <a className="navbar-brand">
               <img className="team__ceo" src="./assets/images/logo-sip-h.svg" alt="Secure IP Logo" />
             </a>
-          </ActiveLink>
+          </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                   aria-label="Toggle navigation">
