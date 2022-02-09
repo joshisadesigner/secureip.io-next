@@ -89,9 +89,9 @@
     }
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav .nav-item .active,
+.navbar-default .navbar-nav .nav-item .active:hover,
+.navbar-default .navbar-nav .nav-item .active:focus {
     background-color: rgba(0,0,0, .06) !important;
 
     @include media-breakpoint-up(sm) {
